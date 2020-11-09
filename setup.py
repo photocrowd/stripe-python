@@ -36,7 +36,7 @@ with open(os.path.join(here, "stripe", "version.py"), encoding="utf-8") as f:
     exec(f.read(), version_contents)
 
 setup(
-    name="stripe",
+    name="stripe_modern",
     version=version_contents["VERSION"],
     description="Python bindings for the Stripe API",
     long_description=long_description,
