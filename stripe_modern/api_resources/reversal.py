@@ -1,9 +1,9 @@
 from __future__ import absolute_import, division, print_function
 
-from stripe import util
-from stripe.api_resources.abstract import UpdateableAPIResource
-from stripe.api_resources.transfer import Transfer
-from stripe.six.moves.urllib.parse import quote_plus
+from stripe_modern import util
+from stripe_modern.api_resources.abstract import UpdateableAPIResource
+from stripe_modern.api_resources.transfer import Transfer
+from stripe_modern.six.moves.urllib.parse import quote_plus
 
 
 class Reversal(UpdateableAPIResource):

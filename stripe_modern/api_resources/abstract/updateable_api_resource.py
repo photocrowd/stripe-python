@@ -1,8 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
-from stripe import util
-from stripe.api_resources.abstract.api_resource import APIResource
-from stripe.six.moves.urllib.parse import quote_plus
+from stripe_modern import util
+from stripe_modern.api_resources.abstract.api_resource import APIResource
+from stripe_modern.six.moves.urllib.parse import quote_plus
 
 
 class UpdateableAPIResource(APIResource):

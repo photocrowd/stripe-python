@@ -1,7 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
-import stripe
-from stripe import util
+import stripe_modern as stripe
+from stripe_modern import util
 
 
 class TestCustomMethod(object):

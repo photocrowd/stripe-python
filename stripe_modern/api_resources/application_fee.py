@@ -1,8 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
-from stripe import util
-from stripe.api_resources.abstract import ListableAPIResource
-from stripe.api_resources.abstract import nested_resource_class_methods
+from stripe_modern import util
+from stripe_modern.api_resources.abstract import ListableAPIResource
+from stripe_modern.api_resources.abstract import nested_resource_class_methods
 
 
 @nested_resource_class_methods(

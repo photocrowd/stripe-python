@@ -1,7 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
-from stripe.util import merge_dicts
-from stripe.stripe_object import StripeObject
+from stripe_modern.util import merge_dicts
+from stripe_modern.stripe_object import StripeObject
 
 
 class ErrorObject(StripeObject):

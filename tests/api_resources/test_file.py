@@ -4,7 +4,7 @@ import tempfile
 
 import pytest
 
-import stripe
+import stripe_modern as stripe
 
 
 TEST_RESOURCE_ID = "file_123"

@@ -9,11 +9,11 @@ import uuid
 import warnings
 from collections import OrderedDict
 
-import stripe
-from stripe import error, oauth_error, http_client, version, util, six
-from stripe.multipart_data_generator import MultipartDataGenerator
-from stripe.six.moves.urllib.parse import urlencode, urlsplit, urlunsplit
-from stripe.stripe_response import StripeResponse
+import stripe_modern as stripe
+from stripe_modern import error, oauth_error, http_client, version, util, six
+from stripe_modern.multipart_data_generator import MultipartDataGenerator
+from stripe_modern.six.moves.urllib.parse import urlencode, urlsplit, urlunsplit
+from stripe_modern.stripe_response import StripeResponse
 
 
 def _encode_datetime(dttime):
@@ -82,8 +82,8 @@ class APIRequestor(object):
 
         self._default_proxy = None
 
-        from stripe import verify_ssl_certs as verify
-        from stripe import proxy
+        from stripe_modern import verify_ssl_certs as verify
+        from stripe_modern import proxy
 
         if client:
             self._client = client
@@ -281,7 +281,7 @@ class APIRequestor(object):
         if self.api_key:
             my_api_key = self.api_key
         else:
-            from stripe import api_key
+            from stripe_modern import api_key
 
             my_api_key = api_key
 

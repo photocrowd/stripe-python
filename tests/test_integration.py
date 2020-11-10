@@ -7,7 +7,7 @@ import json
 import warnings
 import time
 
-import stripe
+import stripe_modern as stripe
 import pytest
 
 if platform.python_implementation() == "PyPy":

@@ -3,7 +3,7 @@ from __future__ import absolute_import, division, print_function
 import random
 import io
 
-import stripe
+import stripe_modern as stripe
 
 
 class MultipartDataGenerator(object):

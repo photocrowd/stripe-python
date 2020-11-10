@@ -1,7 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
-from stripe import api_requestor, connect_api_base, error
-from stripe.six.moves.urllib.parse import urlencode
+from stripe_modern import api_requestor, connect_api_base, error
+from stripe_modern.six.moves.urllib.parse import urlencode
 
 
 class OAuth(object):
@@ -10,7 +10,7 @@ class OAuth(object):
         if "client_id" in params:
             return
 
-        from stripe import client_id
+        from stripe_modern import client_id
 
         if client_id:
             params["client_id"] = client_id

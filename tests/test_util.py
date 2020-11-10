@@ -3,9 +3,9 @@ from __future__ import absolute_import, division, print_function
 import sys
 from collections import namedtuple
 
-import stripe
-from stripe import util
-from stripe.six.moves import builtins
+import stripe_modern as stripe
+from stripe_modern import util
+from stripe_modern.six.moves import builtins
 
 PRINT_FUNC_STRING = builtins.__name__ + ".print"
 

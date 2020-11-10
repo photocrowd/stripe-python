@@ -1,6 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
-from stripe import util
+from stripe_modern import util
 
 
 class VerifyMixin(object):

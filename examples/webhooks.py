@@ -2,7 +2,7 @@ from __future__ import absolute_import, division, print_function
 
 import os
 
-import stripe
+import stripe_modern as stripe
 from flask import Flask, request
 
 

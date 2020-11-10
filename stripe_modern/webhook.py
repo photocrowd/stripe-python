@@ -6,8 +6,8 @@ import time
 from collections import OrderedDict
 from hashlib import sha256
 
-import stripe
-from stripe import error, util
+import stripe_modern as stripe
+from stripe_modern import error, util
 
 
 class Webhook(object):

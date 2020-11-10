@@ -4,7 +4,7 @@ import json
 
 import pytest
 
-import stripe
+import stripe_modern as stripe
 
 
 class TestListObject(object):

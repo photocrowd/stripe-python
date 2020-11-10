@@ -9,16 +9,16 @@ import random
 import threading
 import json
 
-import stripe
-from stripe import error, util, six
-from stripe.request_metrics import RequestMetrics
+import stripe_modern as stripe
+from stripe_modern import error, util, six
+from stripe_modern.request_metrics import RequestMetrics
 
 # - Requests is the preferred HTTP library
 # - Google App Engine has urlfetch
 # - Use Pycurl if it's there (at least it verifies SSL certs)
 # - Fall back to urllib2 with a warning if needed
 try:
-    from stripe.six.moves import urllib
+    from stripe_modern.six.moves import urllib
 except ImportError:
     # Try to load in urllib2, but don't sweat it if it's not available.
     pass
@@ -60,7 +60,7 @@ except ImportError:
     urlfetch = None
 
 # proxy support for the pycurl client
-from stripe.six.moves.urllib.parse import urlparse
+from stripe_modern.six.moves.urllib.parse import urlparse
 
 
 def _now_ms():
@@ -193,7 +193,7 @@ class HTTPClient(object):
         return False
 
     def _max_network_retries(self):
-        from stripe import max_network_retries
+        from stripe_modern import max_network_retries
 
         # Configured retries, isolated here for tests
         return max_network_retries

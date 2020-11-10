@@ -1,7 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
-import stripe
-from stripe.six import python_2_unicode_compatible
+import stripe_modern as stripe
+from stripe_modern.six import python_2_unicode_compatible
 
 
 @python_2_unicode_compatible

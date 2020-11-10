@@ -4,8 +4,8 @@ import datetime
 import json
 from copy import deepcopy
 
-import stripe
-from stripe import api_requestor, util, six
+import stripe_modern as stripe
+from stripe_modern import api_requestor, util, six
 
 
 def _compute_diff(current, previous):

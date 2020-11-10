@@ -1,9 +1,9 @@
 from __future__ import absolute_import, division, print_function
 
-from stripe import api_requestor, six, util
-from stripe.stripe_object import StripeObject
+from stripe_modern import api_requestor, six, util
+from stripe_modern.stripe_object import StripeObject
 
-from stripe.six.moves.urllib.parse import quote_plus
+from stripe_modern.six.moves.urllib.parse import quote_plus
 
 
 class ListObject(StripeObject):

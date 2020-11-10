@@ -8,9 +8,9 @@ from collections import OrderedDict
 
 import pytest
 
-import stripe
-from stripe import six
-from stripe.stripe_response import StripeResponse
+import stripe_modern as stripe
+from stripe_modern import six
+from stripe_modern.stripe_response import StripeResponse
 
 from six.moves.urllib.parse import urlsplit
 

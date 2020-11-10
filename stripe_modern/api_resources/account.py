@@ -1,15 +1,15 @@
 from __future__ import absolute_import, division, print_function
 
-import stripe
-from stripe import oauth, six
-from stripe import util
-from stripe.api_resources.abstract import CreateableAPIResource
-from stripe.api_resources.abstract import DeletableAPIResource
-from stripe.api_resources.abstract import ListableAPIResource
-from stripe.api_resources.abstract import UpdateableAPIResource
-from stripe.api_resources.abstract import custom_method
-from stripe.api_resources.abstract import nested_resource_class_methods
-from stripe.six.moves.urllib.parse import quote_plus
+import stripe_modern as stripe
+from stripe_modern import oauth, six
+from stripe_modern import util
+from stripe_modern.api_resources.abstract import CreateableAPIResource
+from stripe_modern.api_resources.abstract import DeletableAPIResource
+from stripe_modern.api_resources.abstract import ListableAPIResource
+from stripe_modern.api_resources.abstract import UpdateableAPIResource
+from stripe_modern.api_resources.abstract import custom_method
+from stripe_modern.api_resources.abstract import nested_resource_class_methods
+from stripe_modern.six.moves.urllib.parse import quote_plus
 
 
 @custom_method("reject", http_verb="post")

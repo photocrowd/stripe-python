@@ -7,9 +7,9 @@ from distutils.version import StrictVersion
 
 import pytest
 
-import stripe
-from stripe.six.moves.urllib.request import urlopen
-from stripe.six.moves.urllib.error import HTTPError
+import stripe_modern as stripe
+from stripe_modern.six.moves.urllib.request import urlopen
+from stripe_modern.six.moves.urllib.error import HTTPError
 
 from tests.request_mock import RequestMock
 from tests.stripe_mock import StripeMock

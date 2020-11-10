@@ -8,9 +8,9 @@ import sys
 import os
 import re
 
-import stripe
-from stripe import six
-from stripe.six.moves.urllib.parse import parse_qsl
+import stripe_modern as stripe
+from stripe_modern import six
+from stripe_modern.six.moves.urllib.parse import parse_qsl
 
 
 STRIPE_LOG = os.environ.get("STRIPE_LOG")
@@ -132,7 +132,7 @@ else:
 
 def get_object_classes():
     # This is here to avoid a circular dependency
-    from stripe.object_classes import OBJECT_CLASSES
+    from stripe_modern.object_classes import OBJECT_CLASSES
 
     return OBJECT_CLASSES
 

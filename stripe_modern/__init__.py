@@ -31,13 +31,13 @@ ca_bundle_path = os.path.join(
 log = None
 
 # API resources
-from stripe.api_resources import *  # noqa
+from stripe_modern.api_resources import *  # noqa
 
 # OAuth
-from stripe.oauth import OAuth  # noqa
+from stripe_modern.oauth import OAuth  # noqa
 
 # Webhooks
-from stripe.webhook import Webhook, WebhookSignature  # noqa
+from stripe_modern.webhook import Webhook, WebhookSignature  # noqa
 
 
 # Sets some basic information about the running application that's sent along

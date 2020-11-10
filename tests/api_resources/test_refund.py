@@ -1,6 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
-import stripe
+import stripe_modern as stripe
 
 
 TEST_RESOURCE_ID = "re_123"

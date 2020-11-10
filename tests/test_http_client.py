@@ -3,8 +3,8 @@ from __future__ import absolute_import, division, print_function
 import pytest
 import json
 
-import stripe
-from stripe import six
+import stripe_modern as stripe
+from stripe_modern import six
 
 VALID_API_METHODS = ("get", "post", "delete")
 

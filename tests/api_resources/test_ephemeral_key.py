@@ -2,7 +2,7 @@ from __future__ import absolute_import, division, print_function
 
 import pytest
 
-import stripe
+import stripe_modern as stripe
 
 
 class TestEphemeralKey(object):

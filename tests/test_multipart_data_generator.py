@@ -4,8 +4,8 @@ from __future__ import absolute_import, division, print_function
 
 import re
 
-from stripe import six
-from stripe.multipart_data_generator import MultipartDataGenerator
+from stripe_modern import six
+from stripe_modern.multipart_data_generator import MultipartDataGenerator
 
 
 class TestMultipartDataGenerator(object):

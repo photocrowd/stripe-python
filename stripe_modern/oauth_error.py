@@ -1,7 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
-import stripe
-from stripe.error import StripeError
+import stripe_modern as stripe
+from stripe_modern.error import StripeError
 
 
 class OAuthError(StripeError):

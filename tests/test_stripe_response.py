@@ -3,8 +3,8 @@ from __future__ import absolute_import, division, print_function
 import json
 from collections import OrderedDict
 
-from stripe import six
-from stripe.stripe_response import StripeResponse
+from stripe_modern import six
+from stripe_modern.stripe_response import StripeResponse
 
 
 class TestStripeResponse(object):
